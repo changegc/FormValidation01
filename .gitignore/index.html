@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单验证实例</title>
+		<link rel="stylesheet" href="css/form.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/form.js"></script>
+	</head>
+	<body>
+		<form action="reg.html" method="get">
+			<p>用户名:</p>
+			<p>
+			<input type="text" name="username" class="auth">
+			<span class="error">用户名的长度至少6位！</span>
+			</p>
+			<p>密码:</p>
+			<p>
+			<input type="text" name="password" class="auth">
+			<span class="error">密码的长度至少8位！</span>
+			</p>
+			<p>确认密码:</p>
+			<p>
+			<input type="text" name="repassword" class="auth">
+			<span class="error">两次密码不一致！</span>
+			</p>
+			<p>邮箱:</p>
+			<p>
+			<input type="text" name="email" class="auth">
+			<span class="error">邮箱格式不正确！</span>
+			</p>
+			<p>手机号码:</p>
+			<p>
+			<input type="text" name="phone" class="auth" maxlength="11">
+			<span class="error">手机号码不正确！</span>
+			</p>
+			<p><input type="submit" value="ok"></p>
+		</form>
+	</body>
+</html>
